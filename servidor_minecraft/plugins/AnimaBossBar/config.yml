@@ -1,0 +1,47 @@
+bossbars:
+  "1":
+    enabled: true
+    title:
+      text: "&aWelcome to the server"
+    color: BLUE
+    style: SOLID
+    animation: DECREASING
+    timeSeconds: 10
+    removeOnFinish: true
+    next: "2"
+    autoAttach: true
+
+  "2":
+    enabled: true
+    title:
+      text: "&eHave fun &7and &b/enjoy"
+    color: GREEN
+    style: SOLID
+    animation: STATIC
+    timeSeconds: 5
+    removeOnFinish: true
+    next: "1"
+    autoAttach: false
+
+chatMessages:
+  welcome:
+    enabled: true
+    intervalSeconds: 120
+    messages:
+      - "&7Join our &9Discord&7: &b/discord"
+      - "&7Use &b/vote &7for rewards!"
+    audience:
+      type: ALL
+
+  staff:
+    enabled: true
+    intervalSeconds: 300
+    messages:
+      - "&cStaff: &7Check tickets!"
+    audience:
+      type: PERMISSION
+      permission: "server.staff"
+
+    disabledWorlds:
+      - world_nether
+      - world_the_end
